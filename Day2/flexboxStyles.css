@@ -1,0 +1,19 @@
+.parent {
+  background-color: aqua;
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.child {
+  width: 100px;
+  background-color: blanchedalmond;
+  border: 1px solid red;
+  flex-basis: 40px;
+  flex-shrink: 0;
+}
+
+.search {
+}

@@ -84,7 +84,7 @@ body {
   padding: 10px 32px;
 }
 
-.parent {
+/* .parent {
   ol {
     background-color: blue;
   }
@@ -95,3 +95,14 @@ body {
     background-color: brown;
   }
 }
+.parent {
+  ul:nth-child(5) {
+    li:nth-child(3) {
+      background-color: yellowgreen;
+    }
+    li:nth-of-type(3) {
+      background-color: bisque;
+    }
+    background-color: chartreuse;
+  }
+} */

@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* width = border(l&r)+content+padding */
+}
+/* 
+.parent {
+  background-color: blueviolet;
+
+  margin: 16px;
+
+  padding: 1px;
+  border: 1px solid #ccc;
+  width: 100px;
+} */
+
+/* .parent p{
+  background-color: blueviolet;
+
+  margin: 16px;
+
+  padding: 1px;
+  border: 1px solid #ccc;
+  width: 100px;
+}  */
+
+/* .parent {
+  p {
+    background-color: blueviolet;
+
+    margin: 16px;
+
+    padding: 1px;
+    border: 1px solid #ccc;
+    width: 100px;
+  }
+  span {
+    background-color: aqua;
+  }
+} */
+/* 
+.parent {
+  width: 200px;
+} */
+
+/* .parent {
+  font-size: 32px;
+}
+
+.child {
+  font-size: 2em;
+  background-color: aqua;
+} */
+
+/* .btn {
+  display: block;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px auto;
+  font-size: 16px;
+  width: 120px;
+}
+
+.btn-small {
+  font-size: 16px;
+} */
+/* body {
+  height: 100vh;
+  background-color: aqua;
+}
+.parent {
+  background-color: azure;
+  height: 100%;
+}
+.child {
+  height: 100%;
+  background-color: aquamarine;
+} */
+body {
+  height: 100vh;
+  width: 100vw;
+  padding: 10px 32px;
+}
+
+.parent {
+  ol {
+    background-color: blue;
+  }
+}
+
+.parent {
+  ul:first-child {
+    background-color: brown;
+  }
+}

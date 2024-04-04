@@ -1,0 +1,10 @@
+* {
+  padding: 0;
+  margin: 1;
+}
+
+.parent {
+  background-color: bluevolit;
+}
+
+@media (800px <=width<=1200px);

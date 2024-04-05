@@ -26,10 +26,10 @@ function submitForm(e) {
     const ty = t[i].type;
 
     // console.dir(t[i], type);s
-    console.log(ty, vl);
+    // console.log(ty, vl);
 
     if (ty != "submit") {
-      res[nm] = vl;
+      // res[nm] = vl;
       const vl = t[i].value;
       const nm = t[i].name;
       if (ty == "checkbox" && t[i].checked) {

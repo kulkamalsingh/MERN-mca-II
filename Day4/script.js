@@ -64,3 +64,33 @@
 // }
 
 // checkIfObject([]);
+
+// const arr = ["name", 1, 2, 3, 4, true];
+
+// const obj = {
+//   name: "ajay",
+//   age: 20,
+// };
+
+// for (let i = 0; i < 2; i++);
+// {
+//   console.log(i);
+// }
+
+// for (let i = 0; i < 2; i++);
+// {
+//   console.log([obj(i)]);
+// }
+
+// for (let i of arr) {
+//   console.log(i);
+// }
+// for (let i of obj) {
+//   console.log(i);
+// }
+// for (let i in arr) {
+//   console.log(i);
+// }
+// for (let i in obj) {
+//   console.log(i);
+// }

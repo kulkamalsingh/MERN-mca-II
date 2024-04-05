@@ -142,3 +142,4 @@ console.log(ne);
 // document.body.appendChild(ne);
 const firstDiv = document.getElementsByTagName("div");
 firstDiv[0].appendChild(ne);
+firstDiv[0].remove(ne);

@@ -94,3 +94,51 @@
 // for (let i in obj) {
 //   console.log(i);
 // }
+
+// window
+
+// console.log(window);
+
+// console.log(innerHeight);
+// console.log(innerWidth);
+
+// console.log(window.document);
+// console.log(window);
+// console.dir(window.document);
+// console.dir(window);
+
+// seletors
+
+// const res = document.getElementsByTagName("h3");
+
+// console.log(res);
+
+// const res = document.getElementById("ht3");
+
+// console.log(res);
+
+// const res = document.getElementById("t1");
+
+// console.log(res);
+
+// const res = document.getElementById("t1");
+
+// console.dir(res);
+
+// const res = document.querySelectorAll("h3");
+
+// console.log(res);
+
+// const res = document.querySelectorAll("div>h3");
+
+// console.log(res);
+
+const ne = document.createElement("h3");
+console.log(ne);
+
+ne.innerText = "Dynamic text";
+console.log(ne);
+
+// document.body.appendChild(ne);
+const firstDiv = document.getElementsByTagName("div");
+firstDiv[0].appendChild(ne);

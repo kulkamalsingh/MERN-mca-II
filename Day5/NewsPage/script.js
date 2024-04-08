@@ -18,7 +18,7 @@ console.log("...API STARTED");
 
 function callAPI() {
   fetch(
-    "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/delhi?=ffc3755c37c147799c44793024549eec"
+    "https://newsapi.org/v2/everything?q=tesla&from=2024-03-08&sortBy=publishedAt&apiKey=cfa557f7993d4388b4de9ed96b398fe8"
   )
     .then((res) => {
       return res.json();

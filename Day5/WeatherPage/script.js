@@ -38,15 +38,15 @@ function renderUI(data) {
   const childRow = document.createElement("tr");
   const c1 = document.createElement("td");
   c1.innerText = "07-04-24";
-  row.appendChild(c1);
+  childRow.appendChild(c1);
 
   const c2 = document.createElement("td");
-  c2.innerText = "104 F";
-  row.appendChild(c2);
+  c2.innerText = "121 F";
+  childRow.appendChild(c2);
 
   const c3 = document.createElement("td");
   c3.innerText = "90 F";
-  row.appendChild(c3);
+  childRow.appendChild(c3);
 
   root.append(childRow);
 }

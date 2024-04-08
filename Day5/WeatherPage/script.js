@@ -2,14 +2,20 @@ console.log("weather app");
 
 function fetchAPI(params) {
   const url =
-    "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/delhi?key=V5QWY8Y5E73VJ2QHC2N7TK36D";
+    "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/delhi?key=GQPSP9JCPBS3M58ERC9S76MNL";
 
   fetch(url)
     .then((res) => res.json())
     .then(renderUI);
+  // .then((res) => {
+  //   return res.json();
+  // })
+  // .then((data) => {
+  //   renderUI(data);
+  // });
 }
 
-function renderUI(params) {
+function renderUI(data) {
   const days = data.days;
   console.log(days);
 
@@ -20,11 +26,11 @@ function renderUI(params) {
   row.appendChild(cell1);
 
   const cell2 = document.createElement("th");
-  cell2.innerText = "Maximun Temp";
+  cell2.innerText = "Maximum Temp";
   row.appendChild(cell2);
 
   const cell3 = document.createElement("th");
-  cell3.innerText = "Maximun Temp";
+  cell3.innerText = "Minimum Temp";
   row.appendChild(cell3);
 
   root.append(row);

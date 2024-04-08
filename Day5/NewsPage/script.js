@@ -36,14 +36,17 @@ function renderUI(data) {
   console.log(articles);
 
   //  single articles from the articles array
-  const ar = articles[0];
+  const ar = articles[2];
 
   console.log(ar);
 
   const div = document.createElement("div");
   const h3 = document.createElement("h3");
   h3.innerText = ar.title;
+  const img = document.createElement("img");
+  img.src = ar.urlToImage;
   div.appendChild(h3);
+  div.appendChild(img);
   // div.innerText = ar.title;
   root.appendChild(div);
 }

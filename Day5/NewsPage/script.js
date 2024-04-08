@@ -31,10 +31,20 @@ function callAPI() {
 function renderUI(data) {
   const root = document.getElementById("root");
 
-  const div = document.createElement("div");
+  // got the articles from data
+  const articles = data.articles;
+  console.log(articles);
 
-  div.innerText = "Card";
-  console.log(data);
+  //  single articles from the articles array
+  const ar = articles[0];
+
+  console.log(ar);
+
+  const div = document.createElement("div");
+  const h3 = document.createElement("h3");
+  h3.innerText = ar.title;
+  div.appendChild(h3);
+  // div.innerText = ar.title;
   root.appendChild(div);
 }
 

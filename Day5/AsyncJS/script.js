@@ -38,5 +38,8 @@
 console.log("start");
 fetch("https://dummyjson.com/products/1")
   .then((res) => res.json())
-  .then((data) => console.log(data));
+  .then((data) => console.log(data))
+  .catch((err) => {
+    console.log("Error occured");
+  });
 console.log("end");

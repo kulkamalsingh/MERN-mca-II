@@ -50,31 +50,51 @@
 
 // console.log(pr);
 
-setTimeout(() => {
-  console.log("first timeout.....");
+// setTimeout(() => {
+//   console.log("first timeout.....");
+// }, 0);
+
+// const pr = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     resolve("apka kaam ho gya hai");
+//   }, 0);
+// });
+
+// console.log(pr);
+
+// const prr = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     reject("apka kaam nhi ho paya hai ");
+//   }, 1000);
+// });
+
+// console.log(prr);
+
+// pr.then((res) => {
+//   console.log(res);
+//   //   alert(res);
+// });
+// prr.catch((err) => {
+//   console.log(err);
+//   //   alert(err);
+// });
+
+// ********JS Visulization***********
+
+setTimeout(function abc() {
+  console.log("I am one");
 }, 0);
 
-const pr = new Promise((resolve, reject) => {
+const pr = new Promise((res, rej) => {
   setTimeout(() => {
-    resolve("apka kaam ho gya hai");
+    res("Done");
   }, 0);
 });
 
-console.log(pr);
-
-const prr = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    reject("apka kaam nhi ho paya hai ");
-  }, 1000);
+pr.then(function b(res) {
+  console.log("promise completed", res);
 });
 
-console.log(prr);
-
-pr.then((res) => {
-  console.log(res);
-  //   alert(res);
-});
-prr.catch((err) => {
-  console.log(err);
-  //   alert(err);
-});
+setTimeout(function xyz() {
+  console.log("I am two");
+}, 0);

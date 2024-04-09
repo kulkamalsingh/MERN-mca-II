@@ -41,25 +41,37 @@
 
 // console.log(ans);
 
-const arr = [
-  "delhi, India",
-  "mumbai, India",
-  "chennai",
-  "kolkata",
-  "pune",
-  "India",
-  "mosscow,Russia",
-  "new york,USA",
-];
+// const arr = [
+//   "delhi, India",
+//   "mumbai, India",
+//   "chennai",
+//   "kolkata",
+//   "pune",
+//   "India",
+//   "mosscow,Russia",
+//   "new york,USA",
+// ];
 
-const ans1 = arr.filter((a) => {
-  const ns = a.toLowerCase();
-  if (ns.includes("india")) {
-    return true;
-  } else false;
-});
+// const ans1 = arr.filter((a) => {
+//   const ns = a.toLowerCase();
+//   if (ns.includes("india")) {
+//     return true;
+//   } else false;
+// });
 
-const ans2 = arr.filter((a) => a.toLowerCase().includes("india"));
+// const ans2 = arr.filter((a) => a.toLowerCase().includes("india"));
 
-console.log(ans1);
-console.log(ans2);
+// console.log(ans1);
+// console.log(ans2);
+
+// **************Reduce function***************
+
+// const arr = [10, 22, 34, 50];
+
+// const ans = arr.reduce((a, b, c, d) => {
+//   console.log(a, b, c, d);
+//   return a + b;
+// });
+// console.log(ans);
+
+

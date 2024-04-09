@@ -50,11 +50,16 @@
 
 // console.log(pr);
 
+setTimeout(() => {
+  console.log("first timeout.....");
+}, 0);
+
 const pr = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("apka kaam ho gya hai");
-  }, 10000);
+  }, 0);
 });
+
 console.log(pr);
 
 const prr = new Promise((resolve, reject) => {
@@ -66,10 +71,10 @@ const prr = new Promise((resolve, reject) => {
 console.log(prr);
 
 pr.then((res) => {
-  //   console.log(res);
-  alert(res);
+  console.log(res);
+  //   alert(res);
 });
 prr.catch((err) => {
   console.log(err);
-  alert(err);
+  //   alert(err);
 });

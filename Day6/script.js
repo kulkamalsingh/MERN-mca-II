@@ -53,8 +53,23 @@
 const pr = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("apka kaam ho gya hai");
+  }, 10000);
+});
+console.log(pr);
+
+const prr = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject("apka kaam nhi ho paya hai ");
   }, 1000);
 });
+
+console.log(prr);
+
 pr.then((res) => {
-  console.log(res);
+  //   console.log(res);
+  alert(res);
+});
+prr.catch((err) => {
+  console.log(err);
+  alert(err);
 });

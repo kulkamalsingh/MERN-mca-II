@@ -81,20 +81,20 @@
 
 // ********JS Visulization***********
 
-setTimeout(function abc() {
-  console.log("I am one");
-}, 0);
+// setTimeout(function abc() {
+//   console.log("I am one");
+// }, 0);
 
-const pr = new Promise((res, rej) => {
-  setTimeout(() => {
-    res("Done");
-  }, 0);
-});
+// const pr = new Promise((res, rej) => {
+//   setTimeout(() => {
+//     res("Done");
+//   }, 0);
+// });
 
-pr.then(function b(res) {
-  console.log("promise completed", res);
-});
+// pr.then(function b(res) {
+//   console.log("promise completed", res);
+// });
 
-setTimeout(function xyz() {
-  console.log("I am two");
-}, 0);
+// setTimeout(function xyz() {
+//   console.log("I am two");
+// }, 0);

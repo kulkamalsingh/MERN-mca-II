@@ -12,15 +12,54 @@
 
 // const ans3=arr.map(a=>parseInt(a))
 
-const arr = [10, 22, 33];
-const ans = arr.filter((a) => {
-  if (a > 20) return true;
-  else return false;
+// const arr = [10, 22, 33];
+// const ans = arr.filter((a) => {
+//   if (a > 20) return true;
+//   else return false;
+// });
+
+// console.log(arr);
+// console.log(ans);
+
+// const arr = [
+//   "delhi",
+//   "mumbai",
+//   "chennai",
+//   "kolkata",
+//   "pune",
+//   "India",
+//   "Russia",
+//     "USA",
+//   Ira
+// ];
+
+// const ans = arr.filter((s) => {
+//   if (s.includes("i") || s.includes("I")) {
+//     return true;
+//   } else false;
+// });
+
+// console.log(ans);
+
+const arr = [
+  "delhi, India",
+  "mumbai, India",
+  "chennai",
+  "kolkata",
+  "pune",
+  "India",
+  "mosscow,Russia",
+  "new york,USA",
+];
+
+const ans1 = arr.filter((a) => {
+  const ns = a.toLowerCase();
+  if (ns.includes("india")) {
+    return true;
+  } else false;
 });
 
-console.log(arr);
-console.log(ans);
+const ans2 = arr.filter((a) => a.toLowerCase().includes("india"));
 
-const arr = {
-    'delhi'
-}
+console.log(ans1);
+console.log(ans2);

@@ -38,9 +38,51 @@
 
 // ****************HTTP MODULE*******************
 
+// const http = require("http");
+// const server = http.createServer((req, res) => {
+//   console.log("Reqest Recived");
+//   console.log(req.url);
+//   res.writeHead(200, {
+//     "content-type": "text/html",
+//   });
+//   res.end("<h1>HI KAMAL<h1><h2>How are You?<h2>");
+// });
+
+// server.listen(1400, () => {
+//   console.log("****************Server Startted!...........");
+// });
+
+// *****************MINI PROECT******************
+
 const http = require("http");
-const app = http.createServer((req, res) => {
-  console.log("Reqest Recived");
+
+const htmlTemplate = `
+<!DOCTYPE HTML>
+    <html>
+        <head>
+
+        </head>
+        <body>
+            _PRODUCTS_CARDS_
+        </body>
+    </html>
+`;
+
+const cardTemplate = `
+<div class='product-card'>
+<h4>_TITLE_</h4>
+<p>_INFO_<p>
+`;
+const page = htmlTemplate.replace("_PRODUCTS_CARDS_", cardTemplate);
+const server = http.createServer((req, res) => {
+  //   console.log("Reqest Recived");
   console.log(req.url);
+  res.writeHead(200, {
+    "content-type": "text/html",
+  });
+  res.end(page);
 });
-app.listen(1400);
+
+server.listen(1400, () => {
+  console.log("****************Server Startted!...........");
+});

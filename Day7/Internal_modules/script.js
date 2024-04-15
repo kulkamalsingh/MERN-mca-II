@@ -212,8 +212,8 @@ const products = JSON.parse(data).products;
 
 const allCards = products.map((elem)=>{
     let newCard = cardTemplate;
-    newCard = newCard.replace('__TITLE__', elem.title);
-    newCard = newCard.replace('__INFO__', elem.description);
+    newCard = newCard.replace('_TITLE_', elem.title);
+    newCard = newCard.replace('_INFO_', elem.description);
     return newCard;
 });
 

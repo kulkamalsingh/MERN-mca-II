@@ -45,13 +45,20 @@ const server = http.createServer((req, res) => {
   if (pathname == "/home") {
     res.end(inputElement+result);
   } else if (pathname == "/product") {
-    const id = query.id;
-    const productData = dataObj[id];
-    if (id) {
-      
+    const pName = query.productName;
+    if (pName) {
+      const searchNameResults = dataObj.filter(({elem}) => {
+        if (elem.title.includes(pName)){
+          return true;
+        }
+        else {
+          false
+        }
+      })
+      res.end(JSON.stringify(searchNameResults))
     }
-    else if (productData) {
-      res.end(productData);
+    else {
+      res.end("Error................");
     }
   } else {
     res.end("404 not found");

@@ -1,7 +1,1 @@
-[
-  { "name": "kamal", "id": 1 },
-  { "name": "kamal", "id": 2 },
-  { "name": "kamal", "id": 3 },
-  { "name": "kamal", "id": 4 },
-  { "name": "kamal", "id": 5 }
-]
+[{"name":"kamal","id":1},{"name":"kamal","id":3}]

@@ -69,6 +69,22 @@ app.put('/api/products/:id', async (req, res) => {
     console.log(data);
 })
 
+app.delete('/api/products/:id', async (req, res) => {
+    const reqId = parseInt(req.params.id);
+    const arr = JSON.parse(await fsPromises.readFile("./data.json", "utf8"));
+    const newArr = arr.filter((elem) => {
+        if (elem.id == reqId) return false;
+        else return true;
+    });
+    fsPromises.writeFile("./data.json", JSON.stringify(newArr));
+    res.status(204);
+    res.json({
+        status: 'success',
+        data: {
+            newProduct: null,
+        }
+    });
+})
 // app.put('/products',(req, res)=>{
 //     console.log('Request Received')
 //     res.send('<h1>Welcome GET</h1>');
